@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "charlesStorybook_backend": {
+      "main": "src/charlesStorybook_backend/main.mo",
+      "type": "motoko"
+    },
+    "charlesStorybook_frontend": {
+      "dependencies": [
+        "charlesStorybook_backend"
+      ],
+      "source": [
+        "src/charlesStorybook_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "charlesStorybook_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
