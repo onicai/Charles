@@ -84,11 +84,11 @@
     }
 
     .page-image {
-      width: 100%; /* Set the width to 50% of the parent container */
-      padding-top: 70%; /* This sets the height relative to the width to maintain a square aspect ratio */
+      width: 100%;
+      padding-top: 70%;
       background-size: contain; /* Keep the original aspect ratio of the image */
-      background-position: center; /* Center the image */
-      background-repeat: no-repeat; /* Do not repeat the image */
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
     .page-text {
@@ -115,11 +115,6 @@
 <body>
   <div class="container">
     <div class="flip-book" id="book">
-      <!-- <div class="page page-cover page-cover-top" data-density="hard">
-        <div class="page-content">
-          <h2>BOOK TITLE</h2>
-        </div>
-      </div> -->
       <div class="page">
         <div class="page-content">
           <h2 class="page-header">Adventures with Charles</h2>
@@ -195,11 +190,6 @@
           <div class="page-footer">10</div>
         </div>
       </div>
-      <!-- <div class="page page-cover page-cover-bottom" data-density="hard">
-        <div class="page-content">
-          <h2>THE END</h2>
-        </div>
-      </div> -->
     </div>
   </div>
 
@@ -223,9 +213,6 @@
       });
 
       pageFlip.loadFromHTML(document.querySelectorAll('.page'));
-
-      /* document.querySelector(".page-total").innerText = pageFlip.getPageCount();
-      document.querySelector(".page-orientation").innerText = pageFlip.getOrientation(); */
 
       document.querySelector(".btn-prev").addEventListener("click", () => {
         pageFlip.flipPrev();
