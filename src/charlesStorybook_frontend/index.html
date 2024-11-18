@@ -5,12 +5,249 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IC Hello Starter</title>
+  <title>Charles</title>
+  <style>
+    .flip-book {
+      height: 80vh;
+      display: none;
+    }
+
+    .page {
+      padding: 20px;
+      /* background-color: hsl(35, 55, 98); */
+      color: hsl(35, 35, 35);
+      border: solid 1px hsl(35, 20, 70);
+      overflow: hidden;
+    }
+
+    .page.--left {
+      border-right: 0;
+      box-shadow: inset -7px 0 30px -7px rgba(0, 0, 0, 0.4);
+    }
+
+    .page.--right {
+      border-left: 0;
+      box-shadow: inset 7px 0 30px -7px rgba(0, 0, 0, 0.4);
+    }
+
+    .page.--right .page-footer {
+      text-align: right;
+    }
+
+    .page.hard {
+      background-color: hsl(35, 50, 90);
+      border: solid 1px hsl(35, 20, 50);
+    }
+
+    .page.page-cover {
+      background-color: hsl(35, 45, 80);
+      color: hsl(35, 35, 35);
+      border: solid 1px hsl(35, 20, 50);
+    }
+
+    .page.page-cover h2 {
+      text-align: center;
+      padding-top: 50%;
+      font-size: 210%;
+    }
+
+    .page.page-cover.page-cover-top {
+      box-shadow: inset 0px 0 30px 0px rgba(36, 10, 3, 0.5), -2px 0 5px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    .page.page-cover.page-cover-bottom {
+      box-shadow: inset 0px 0 30px 0px rgba(36, 10, 3, 0.5), 10px 0 8px 0px rgba(0, 0, 0, 0.4);
+    }
+
+    .page-content {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: stretch;
+    }
+
+    .page-header {
+      height: 30px;
+      font-size: 100%;
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    .page-subheader {
+      height: 30px;
+      font-size: 100%;
+      text-align: center;
+      padding-right: 30px;
+      padding-left: 50px;
+    }
+
+    .page-image {
+      width: 100%; /* Set the width to 50% of the parent container */
+      padding-top: 70%; /* This sets the height relative to the width to maintain a square aspect ratio */
+      background-size: contain; /* Keep the original aspect ratio of the image */
+      background-position: center; /* Center the image */
+      background-repeat: no-repeat; /* Do not repeat the image */
+    }
+
+    .page-text {
+      height: 100%;
+      flex-grow: 1;
+      font-size: 90%;
+      text-align: justify;
+      margin: 20px;
+      padding-left: 30px;
+      box-sizing: border-box;
+      border-top: solid 1px hsl(35, 55, 90);
+      font-family: "Lucida Handwriting", Times, serif;
+    }
+
+    .page-footer {
+      height: 30px;
+      border-top: solid 1px hsl(35, 55, 90);
+      font-size: 80%;
+      color: hsl(35, 20, 50);
+    }
+  </style>
 </head>
 
 <body>
-  <div id="root"></div>
-  <script type="module" src="/src/main.js"></script>
+  <div class="container">
+    <div class="flip-book" id="book">
+      <!-- <div class="page page-cover page-cover-top" data-density="hard">
+        <div class="page-content">
+          <h2>BOOK TITLE</h2>
+        </div>
+      </div> -->
+      <div class="page">
+        <div class="page-content">
+          <h2 class="page-header">Adventures with Charles</h2>
+          <div class="page-image" style="background-image: url(./Crypto1.png);"></div>
+          <div class="page-footer">1</div>
+        </div>
+      </div>
+      <div class="page">
+        <div class="page-content">
+          <h2 class="page-header">Chapter 1</h2>
+          <h3 class="page-subheader">Charles woke up one morning to find a mysterious email</h3>
+          <div class="page-text">Charles woke up one morning to find a mysterious email in his inbox. It was an invitation to a global crypto treasure hunt, where clues embedded in the blockchain led to hidden wallets full of tokens. Determined, Charles spent days deciphering cryptographic riddles and finally cracked the code. The wallet revealed a modest sum, but the thrill of the chase was the real reward.</div>
+          <div class="page-footer">2</div>
+        </div>
+      </div>
+      <div class="page">
+        <div class="page-content">
+          <h2 class="page-header">Adventures with Charles</h2>
+          <div class="page-image" style="background-image: url(./Crypto2.png);"></div>
+          <div class="page-footer">3</div>
+        </div>
+      </div>
+      <div class="page">
+        <div class="page-content">
+          <h2 class="page-header">Chapter 2</h2>
+          <h3 class="page-subheader">Excitement filled Charles as he invested in a new, promising crypto project</h3>
+          <div class="page-text">Excitement filled Charles as he invested in a new, promising crypto project. He watched as the value of his tokens skyrocketed. But one morning, a headline shook the crypto world: the project’s founders had vanished with millions. Charles logged into his wallet to find his tokens worthless. It was a lesson in the wild, unpredictable world of digital currency.</div>
+          <div class="page-footer">4</div>
+        </div>
+      </div>
+      <div class="page">
+        <div class="page-content">
+          <h2 class="page-header">Adventures with Charles</h2>
+          <div class="page-image" style="background-image: url(./Crypto3.png);"></div>
+          <div class="page-footer">5</div>
+        </div>
+      </div>
+      <div class="page">
+        <div class="page-content">
+          <h2 class="page-header">Chapter 3</h2>
+          <h3 class="page-subheader">At a crypto conference, Charles overheard two experts</h3>
+          <div class="page-text">At a crypto conference, Charles overheard two experts debating the future of a particular coin. Amused, he made a friendly wager with a fellow attendee on which expert would be right. Months later, as the coin doubled in value, Charles smiled at his small win—not for the money, but for the unexpected friendships made at that conference.</div>
+          <div class="page-footer">6</div>
+        </div>
+      </div>
+      <div class="page">
+        <div class="page-content">
+          <h2 class="page-header">Adventures with Charles</h2>
+          <div class="page-image" style="background-image: url(./Crypto4.png);"></div>
+          <div class="page-footer">7</div>
+        </div>
+      </div>
+      <div class="page">
+        <div class="page-content">
+          <h2 class="page-header">Chapter 4</h2>
+          <h3 class="page-subheader">Charles was passionate about digital art</h3>
+          <div class="page-text">Charles was passionate about digital art and proudly owned several unique NFTs. One night, he discovered that his NFT collection had been stolen from his wallet. Furious but determined, Charles worked with blockchain security experts to trace the theft. Eventually, he found the thief's address, and with evidence in hand, he reclaimed his prized digital artworks.</div>
+          <div class="page-footer">8</div>
+        </div>
+      </div>
+      <div class="page">
+        <div class="page-content">
+          <h2 class="page-header">Adventures with Charles</h2>
+          <div class="page-image" style="background-image: url(./Crypto5.png);"></div>
+          <div class="page-footer">9</div>
+        </div>
+      </div>
+      <div class="page">
+        <div class="page-content">
+          <h2 class="page-header">Chapter 5</h2>
+          <h3 class="page-subheader">Charles had always wanted to make a difference in the world</h3>
+          <div class="page-text">Charles had always wanted to make a difference in the world. When he heard of a decentralized charity project accepting crypto donations to support clean water initiatives, he didn’t hesitate. Converting a portion of his crypto into funding, he was thrilled to see reports of wells being built in rural areas. For Charles, crypto wasn’t just about making money; it was about making a meaningful impact.</div>
+          <div class="page-footer">10</div>
+        </div>
+      </div>
+      <!-- <div class="page page-cover page-cover-bottom" data-density="hard">
+        <div class="page-content">
+          <h2>THE END</h2>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+  <!-- Import page-flip library -->
+  <script src="https://cdn.jsdelivr.net/npm/page-flip/dist/js/page-flip.browser.min.js" defer></script>
+
+  <!-- Initialize PageFlip after the library is loaded -->
+  <script defer>
+    document.addEventListener("DOMContentLoaded", function () {
+      const pageFlip = new St.PageFlip(document.getElementById('book'), {
+        width: 550,
+        height: 733,
+        size: "stretch",
+        minWidth: 315,
+        maxWidth: 1000,
+        minHeight: 420,
+        maxHeight: 1350,
+        maxShadowOpacity: 0.5,
+        showCover: false,
+        mobileScrollSupport: false
+      });
+
+      pageFlip.loadFromHTML(document.querySelectorAll('.page'));
+
+      /* document.querySelector(".page-total").innerText = pageFlip.getPageCount();
+      document.querySelector(".page-orientation").innerText = pageFlip.getOrientation(); */
+
+      document.querySelector(".btn-prev").addEventListener("click", () => {
+        pageFlip.flipPrev();
+      });
+
+      document.querySelector(".btn-next").addEventListener("click", () => {
+        pageFlip.flipNext();
+      });
+
+      pageFlip.on("flip", (e) => {
+        document.querySelector(".page-current").innerText = e.data + 1;
+      });
+
+      pageFlip.on("changeState", (e) => {
+        document.querySelector(".page-state").innerText = e.data;
+      });
+
+      pageFlip.on("changeOrientation", (e) => {
+        document.querySelector(".page-orientation").innerText = e.data;
+      });
+    });
+  </script>
 </body>
 
 </html>
