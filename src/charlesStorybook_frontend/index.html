@@ -8,7 +8,6 @@
   <title>Charles</title>
   <style>
     .container {
-      background-color: hsl(35, 35, 35);
       display: flex;
       justify-content: center;
       align-items: center;
@@ -17,12 +16,11 @@
     .book-wrapper {
       width: 63%;
       min-width: 75vh;
-      height: 90vh; /* Adjust the height as needed */
-      border: solid 10px hsl(35, 20, 50); /* Hardcover border */
+      height: 90vh;
+      border: solid 2px hsl(30, 6%, 6%);
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
       align-items: center;
-      color: hsl(0, 0%, 4%);
-      z-index: 1;
+      background-color: hsl(35, 35%, 35%);
     }
 
     .flip-book {
@@ -30,14 +28,13 @@
       height: 89%;
       display: block;
       margin-left: -3vh;
-      z-index: 10;
     }
 
     .page {
       padding: 20px;
-      background-color: hsl(35, 35, 35);
-      color: hsl(35, 35, 35);
-      border: solid 1px hsl(35, 20, 70);
+      background-color: hsl(35, 22%, 85%);
+      border: solid 1px hsl(30, 6%, 6%);
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* Shadow for depth */
       overflow: hidden;
     }
 
