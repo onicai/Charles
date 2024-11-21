@@ -17,17 +17,18 @@
       width: 63%;
       min-width: 75vh;
       height: 90vh;
-      border: solid 2px hsl(30, 6%, 6%);
+      border: solid 3px hsl(30, 6%, 6%);
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
       align-items: center;
       background-color: hsl(35, 35%, 35%);
+      margin: 10px;
     }
 
     .flip-book {
       padding-top: 1%;
       height: 89%;
       display: block;
-      margin-left: -3vh;
+      margin-left: -3.5vh;
     }
 
     .page {
@@ -119,6 +120,10 @@
       background-size: contain; /* Keep the original aspect ratio of the image */
       background-position: center;
       background-repeat: no-repeat;
+      mask-image: url('./PaintedEdgesDesign_fit.png');
+      mask-size: cover; /* Stretch the mask to cover the element */
+      -webkit-mask-image: url('./PaintedEdgesDesign_fit.png'); /* For Safari */
+      -webkit-mask-size: cover;
     }
 
     .story-text {
@@ -143,7 +148,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container" style="background-image: url(./fullBackground.png);">
     <div class="book-wrapper">
       <div class="flip-book" id="book">
         <div class="page">
