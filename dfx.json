@@ -5,9 +5,6 @@
       "type": "motoko"
     },
     "charlesStorybook_frontend": {
-      "dependencies": [
-        "charlesStorybook_backend"
-      ],
       "source": [
         "src/charlesStorybook_frontend/dist"
       ],
