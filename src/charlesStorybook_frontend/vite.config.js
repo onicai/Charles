@@ -7,7 +7,7 @@ dotenv.config({ path: '../../.env' });
 
 export default defineConfig({
   build: {
-    emptyOutDir: true,
+    emptyOutDir: false,
   },
   optimizeDeps: {
     esbuildOptions: {

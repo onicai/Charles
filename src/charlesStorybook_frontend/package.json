@@ -4,11 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "setup": "npm i && dfx canister create charlesStorybook_backend && dfx generate charlesStorybook_backend && dfx deploy",
     "start": "vite --port 3000",
-    "prebuild": "dfx generate",
-    "build": "tsc && vite build",
-    "format": "prettier --write \"src/**/*.{json,js,jsx,ts,tsx,css,scss}\""
+    "build": "vite build"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.16.5",
