@@ -254,6 +254,47 @@
       storyTexts.forEach((storyText) => {
         adjustFontSize(storyText); // Adjust font size for each element
       });
+
+      // iframe integration
+      // Function to send current page data to the parent
+      function sendPageData() {
+        console.log("in sendPageData");
+        const currentPage = pageFlip.getCurrentPageIndex(); // Get the current page index (0-based)
+        console.log("in sendPageData currentPage ", currentPage);
+        const totalPages = pageFlip.getPageCount(); // Get total pages
+        console.log("in sendPageData totalPages ", totalPages);
+
+        const assetsIndex = currentPage / 2;
+        
+        const data = {
+          currentPage: currentPage,
+          totalPages,
+          image: storybookData[assetsIndex].image,
+          prompt: storybookData[assetsIndex].prompt,
+          //story: storybookData[assetsIndex].story,
+        };
+
+        console.log("in sendPageData data ", data);
+
+        // Post the message to the parent
+        window.parent.postMessage(data, '*'); // TODO?: Replace '*' with specific origin for security
+      };
+
+      // Send page data whenever the parent requests it
+      window.addEventListener('message', (event) => {
+        // Validate the origin (TODO?: replace '*' with your expected origin for security)
+        if (event.origin !== '*' && event.origin !== 'https://your-parent-domain.com') return;
+
+        const { action } = event.data;
+
+        if (action === 'getPageData') {
+          sendPageData();
+        };
+      });
+
+      /* pageFlip.on('flip', () => {
+        sendPageData();
+      }); */
     });
   </script>
 </body>
