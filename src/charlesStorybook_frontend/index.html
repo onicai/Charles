@@ -161,35 +161,63 @@
 
   <!-- Initialize PageFlip after the library is loaded -->
   <script defer>
+    const thisStorybookNftId = 0; // TODO: set dynamically (based on which storybook NFT is being loaded)
+
+    const storybookNFTs = [ // TODO: mockup NFT array (to hold all NFT data)
+      {
+        doublepages: [ // each entry will be rendered into one double page (image on the left page, prompt and story on the right page)
+          {
+            imageId: 494, // 0 - 494 (as there are 495 unique images)
+            imageUrl: "./Charles_image_494.png",
+            promptIndex: 0, // 0 - 9 (as there are 10 unique prompts per image)
+            promptId: "494-0", // imageId-promptIndex
+            prompt: "Charles woke up one morning to find a mysterious email", // text of the prompt (doesn't change)
+            story: "Charles woke up one morning to find a mysterious email in his inbox. It was an invitation to a global crypto treasure hunt, where clues embedded in the blockchain led to hidden wallets full of tokens. Determined, Charles spent days deciphering cryptographic riddles and finally cracked the code. The wallet revealed a modest sum, but the thrill of the chase was the real reward.", // generated story, i.e. initially empty and to then be filled by user triggering story generation for this page
+          },
+          {
+            imageId: 200,
+            imageUrl: "./Charles_image_200.png",
+            promptIndex: 9,
+            promptId: "200-9",
+            prompt: "Excitement filled Charles as he invested in a new, promising crypto project",
+            story: "Excitement filled Charles as he invested in a new, promising crypto project. He watched as the value of his tokens skyrocketed. But one morning, a headline shook the crypto world: the project’s founders had vanished with millions. Charles logged into his wallet to find his tokens worthless. It was a lesson in the wild, unpredictable world of digital currency.",
+          },
+          {
+            imageId: 3,
+            imageUrl: "./Charles_image_3.png",
+            promptIndex: 5,
+            promptId: "3-5",
+            prompt: "At a crypto conference, Charles overheard two experts",
+            story: "At a crypto conference, Charles overheard two experts debating the future of a particular coin. Amused, he made a friendly wager with a fellow attendee on which expert would be right. Months later, as the coin doubled in value, Charles smiled at his small win—not for the money, but for the unexpected friendships made at that conference.",
+          },
+          {
+            imageId: 44,
+            imageUrl: "./Charles_image_44.png",
+            promptIndex: 0,
+            promptId: "44-0",
+            prompt: "Charles was passionate about digital art",
+            story: "Charles was passionate about digital art and proudly owned several unique NFTs. One night, he discovered that his NFT collection had been stolen from his wallet. Furious but determined, Charles worked with blockchain security experts to trace the theft. Eventually, he found the thief's address, and with evidence in hand, he reclaimed his prized digital artworks.",
+          },
+          {
+            imageId: 95,
+            imageUrl: "./Charles_image_95.png",
+            promptIndex: 2,
+            promptId: "95-2",
+            prompt: "Charles had always wanted to make a difference in the world",
+            story: "Charles had always wanted to make a difference in the world. When he heard of a decentralized charity project accepting crypto donations to support clean water initiatives, he didn’t hesitate. Converting a portion of his crypto into funding, he was thrilled to see reports of wells being built in rural areas. For Charles, crypto wasn’t just about making money; it was about making a meaningful impact.",
+          },
+        ],
+        // additional NFT metadata
+      },
+      // more NFT entries
+    ];
+
+    function getStorybookDataToDisplay(storybookNftId) { // TODO: mockup helper function to load data for storybook that will be displayed as pages
+      return storybookNFTs[storybookNftId].doublepages;
+    };
+
     document.addEventListener("DOMContentLoaded", function () {
-      const storybookData = [
-        // each entry will be rendered into one double page (image on the left page, prompt and story on the right page)
-        {
-          image: "./Crypto1.png",
-          prompt: "Charles woke up one morning to find a mysterious email",
-          story: "Charles woke up one morning to find a mysterious email in his inbox. It was an invitation to a global crypto treasure hunt, where clues embedded in the blockchain led to hidden wallets full of tokens. Determined, Charles spent days deciphering cryptographic riddles and finally cracked the code. The wallet revealed a modest sum, but the thrill of the chase was the real reward.",
-        },
-        {
-          image: "./Crypto2.png",
-          prompt: "Excitement filled Charles as he invested in a new, promising crypto project",
-          story: "Excitement filled Charles as he invested in a new, promising crypto project. He watched as the value of his tokens skyrocketed. But one morning, a headline shook the crypto world: the project’s founders had vanished with millions. Charles logged into his wallet to find his tokens worthless. It was a lesson in the wild, unpredictable world of digital currency.",
-        },
-        {
-          image: "./Crypto3.png",
-          prompt: "At a crypto conference, Charles overheard two experts",
-          story: "At a crypto conference, Charles overheard two experts debating the future of a particular coin. Amused, he made a friendly wager with a fellow attendee on which expert would be right. Months later, as the coin doubled in value, Charles smiled at his small win—not for the money, but for the unexpected friendships made at that conference.",
-        },
-        {
-          image: "./Crypto4.png",
-          prompt: "Charles was passionate about digital art",
-          story: "Charles was passionate about digital art and proudly owned several unique NFTs. One night, he discovered that his NFT collection had been stolen from his wallet. Furious but determined, Charles worked with blockchain security experts to trace the theft. Eventually, he found the thief's address, and with evidence in hand, he reclaimed his prized digital artworks.",
-        },
-        {
-          image: "./Crypto5.png",
-          prompt: "Charles had always wanted to make a difference in the world",
-          story: "Charles had always wanted to make a difference in the world. When he heard of a decentralized charity project accepting crypto donations to support clean water initiatives, he didn’t hesitate. Converting a portion of his crypto into funding, he was thrilled to see reports of wells being built in rural areas. For Charles, crypto wasn’t just about making money; it was about making a meaningful impact.",
-        },
-      ];
+      const storybookData = getStorybookDataToDisplay(thisStorybookNftId);
 
       const bookContainer = document.getElementById('book');
 
@@ -200,7 +228,7 @@
         leftPage.innerHTML = `
           <div class="page-content">
             <h2 class="page-header">Adventures with Charles</h2>
-            <div class="charles-image" style="background-image: url('${pageData.image}');"></div>
+            <div class="charles-image" style="background-image: url('${pageData.imageUrl}');"></div>
             <div class="page-footer">${(index * 2) + 1}</div>
           </div>
         `;
