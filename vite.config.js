@@ -3,7 +3,7 @@ import { fileURLToPath, URL } from 'url';
 import environment from 'vite-plugin-environment';
 import dotenv from 'dotenv';
 
-dotenv.config({ path: '../../.env' });
+dotenv.config({ path: './.env' });
 
 export default defineConfig({
   build: {
@@ -24,7 +24,7 @@ export default defineConfig({
       },
     },
   },
-  publicDir: "assets",
+  publicDir: "./src/charlesStorybook_frontend/assets",
   plugins: [
     environment("all", { prefix: "CANISTER_" }),
     environment("all", { prefix: "DFX_" }),
