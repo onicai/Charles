@@ -123,23 +123,21 @@ document.addEventListener("DOMContentLoaded", function () {
     // iframe integration
     // Function to send current page data to the parent
     function sendPageData() {
-        console.log("in sendPageData");
         const currentPage = pageFlip.getCurrentPageIndex(); // Get the current page index (0-based)
-        console.log("in sendPageData currentPage ", currentPage);
         const totalPages = pageFlip.getPageCount(); // Get total pages
-        console.log("in sendPageData totalPages ", totalPages);
 
         const assetsIndex = currentPage / 2;
         
         const data = {
-            currentPage: currentPage,
+            currentPage,
             totalPages,
-            image: storybookData[assetsIndex].image,
+            imageId: storybookData[assetsIndex].imageId,
+            imageUrl: storybookData[assetsIndex].imageUrl,
+            promptIndex: storybookData[assetsIndex].promptIndex,
+            promptId: storybookData[assetsIndex].promptId,
             prompt: storybookData[assetsIndex].prompt,
             //story: storybookData[assetsIndex].story,
         };
-
-        console.log("in sendPageData data ", data);
 
         // Post the message to the parent
         window.parent.postMessage(data, '*'); // TODO?: Replace '*' with specific origin for security
@@ -154,10 +152,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (action === 'getPageData') {
             sendPageData();
-    };
+        };
     });
 
     /* pageFlip.on('flip', () => {
-    sendPageData();
+        sendPageData();
     }); */
 });
