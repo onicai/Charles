@@ -123,13 +123,15 @@ document.addEventListener("DOMContentLoaded", function () {
     // iframe integration
     // Function to send current page data to the parent
     function sendPageData() {
-        const currentPage = pageFlip.getCurrentPageIndex(); // Get the current page index (0-based)
+        const currentPage = pageFlip.getCurrentPageIndex(); // Get the current page index (0-based), i.e. 0 - 9
         const totalPages = pageFlip.getPageCount(); // Get total pages
 
-        const assetsIndex = currentPage / 2;
+        const assetsIndex = currentPage / 2; // Convert to double page index to get correct entry from storybookNFTs.doublepages (0-based), i.e. 0 - 4
         
         const data = {
+            storybookNftId: thisStorybookNftId,
             currentPage,
+            currentDoublePage: assetsIndex,
             totalPages,
             imageId: storybookData[assetsIndex].imageId,
             imageUrl: storybookData[assetsIndex].imageUrl,
