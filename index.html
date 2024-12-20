@@ -40,7 +40,6 @@
     }
 
     .page {
-      padding: 20px;
       background-color: hsl(35, 22%, 85%);
       border: solid 1px hsl(30, 6%, 6%);
       box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); /* Shadow for depth */
@@ -54,6 +53,7 @@
 
     .page.--left .page-footer {
       text-align: left;
+      padding-left: 12px;
     }
 
     .page.--right {
@@ -63,31 +63,7 @@
 
     .page.--right .page-footer {
       text-align: right;
-    }
-
-    .page.hard {
-      background-color: hsl(35, 50, 90);
-      border: solid 1px hsl(35, 20, 50);
-    }
-
-    .page.page-cover {
-      background-color: hsl(35, 45, 80);
-      color: hsl(35, 35, 35);
-      border: solid 1px hsl(35, 20, 50);
-    }
-
-    .page.page-cover h2 {
-      text-align: center;
-      padding-top: 50%;
-      font-size: 210%;
-    }
-
-    .page.page-cover.page-cover-top {
-      box-shadow: inset 0px 0 30px 0px rgba(36, 10, 3, 0.5), -2px 0 5px 2px rgba(0, 0, 0, 0.4);
-    }
-
-    .page.page-cover.page-cover-bottom {
-      box-shadow: inset 0px 0 30px 0px rgba(36, 10, 3, 0.5), 10px 0 8px 0px rgba(0, 0, 0, 0.4);
+      padding-right: 12px;
     }
 
     .page-content {
@@ -106,7 +82,6 @@
       text-transform: uppercase;
       text-align: center;
       padding-top: 5px;
-      padding-right: 35px;
     }
 
     .page.--right .page-header {
@@ -119,13 +94,13 @@
       font-size: 100%;
       font-family: 'Lucida Handwriting', 'Merienda', Times, serif;
       text-align: center;
-      padding-top: 10px;
+      padding-top: 5px;
       padding-right: 20px;
-      padding-left: 50px;
+      padding-left: 30px;
     }
 
     .charles-image {
-      width: 90%;
+      width: 100%;
       padding-top: 80%;
       background-size: contain;
       background-position: center;
@@ -142,7 +117,7 @@
       font-size: 75%;
       text-align: justify;
       margin: 20px;
-      padding-left: 30px;
+      padding-left: 10px;
       box-sizing: border-box;
       border-top: solid 1px hsl(35, 55, 90);
       font-family: 'Lucida Handwriting', 'Merienda', Times, serif;
@@ -151,6 +126,7 @@
 
     .page-footer {
       padding-top: 5px;
+      padding-bottom: 5px;
       border-top: solid 1px hsl(35, 26%, 75%);
       font-size: 80%;
     };
