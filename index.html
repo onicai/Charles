@@ -8,12 +8,19 @@
   <meta name='viewport' content='width=device-width, initial-scale=1.0' />
   <title>Charles</title>
   <style>
+    html, body {
+      margin: 0; /* Remove default margins */
+      padding: 0; /* Remove default padding */
+      overflow: hidden; /* Prevent scrollbars */
+    }
+
     .container {
       display: flex;
       justify-content: center;
       align-items: center;
-      object-fit: cover;
+      object-fit: fill;
       background-image: url(./Charles_background.png);
+      background-repeat: repeat;
     }
 
     .book-wrapper {
