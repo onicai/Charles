@@ -1,0 +1,73 @@
+{"prompts": [
+            "Charles the teddy bear watched fish swim in the sparkling water.",
+            "With a bright yellow bow tie, Charles smiled at his fishy friends.",
+            "Charles thought the fish looked playful as they splashed in the aquarium.",
+            "Excited, Charles waved at a tiny shark zipping past the glass.",
+            "Charles loved visiting the aquarium; it felt like a magical underwater world.",
+            "As he peeked closer, Charles spotted a friendly fish staring back.",
+            "Charles wished he could join the fish for a playful swim.",
+            "With his paws clasped, Charles dreamed of being a fish for a day.",
+            "Many colorful fish darted by, making Charles' eyes twinkle with wonder.",
+            "Charles felt brave as he imagined swimming with the sharks.",
+            "Suddenly, Charles spotted the wise owl, who seemed eager to chat.",
+            "He wondered what kind of secrets the owl might have to share.",
+            "One morning, Charles the teddy bear spotted two bunnies in the tall grass.",
+            "Charles hoped for an adventure with the two bunnies.",
+            "Charles wasn't alone; his bunny friends were ready for fun.",
+            "Charles the teddy bear loves to play with the bunnies in the fields.",
+            "One day, Charles the teddy bear was sitting in the fields when he met two friendly bunnies.",
+            "One day, Charles the teddy bear met two friendly bunnies.",
+            "One day, Charles the teddy bear and his bunny friend ",
+            "One day, Charles and his bunny friend went to play in the fields.",
+            "One day, Charles and his bunny friends were playing in the fields. Charles was cold.",
+            "One day, Charles and his bunny friends were playing in the fields. Charles was so happy."
+        ]
+}        
+
+"accepted_opening_sentences_with_stories": [
+                {
+                    "opening_sentence": "One morning, Charles the teddy bear spotted two bunnies in the tall grass.",
+                    "story_set": []
+                },
+                {
+                    "opening_sentence": "Charles hoped for an adventure with the two bunnies.",
+                    "story_set": []
+                },
+                {
+                    "opening_sentence": "Charles wasn't alone; his bunny friends were ready for fun.",
+                    "story_set": []
+                },
+                {
+                    "opening_sentence": "One sunny day, Charles the teddy bear spotted two bunnies in the fields.",
+                    "story_set": []
+                },
+                {
+                    "opening_sentence": "Charles the teddy bear loves to play with the bunnies in the fields.",
+                    "story_set": []
+                },
+                {
+                    "opening_sentence": "One day, Charles the teddy bear was sitting in the fields when he met two friendly bunnies.",
+                    "story_set": []
+                },
+                {
+                    "opening_sentence": "One day, Charles the teddy bear met two friendly bunnies.",
+                    "story_set": []
+                },
+                {
+                    "opening_sentence": "One day, Charles the teddy bear and his bunny friend ",
+                    "story_set": []
+                },
+                {
+                    "opening_sentence": "One day, Charles and his bunny friend went to play in the fields.",
+                    "story_set": []
+                },
+                {
+                    "opening_sentence": "One day, Charles and his bunny friends were playing in the fields. Charles was cold.",
+                    "story_set": []
+                },
+                {
+                    "opening_sentence": "One day, Charles and his bunny friends were playing in the fields. Charles was so happy.",
+                    "story_set": []
+                }
+            ],
+            
