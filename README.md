@@ -12,6 +12,10 @@ Store in the folder: ./models/out-09
 
 The images are in this Google drive: https://drive.google.com/drive/u/0/folders/15hxZWQN_ziQpX6VgMOUPNYNiG6gv5APz
 
+# Training
+
+See `training/README.md`
+
 # Run llama2.c from command line
 
 To do some prompt testing, it is nice to run llama2.c directly from the llama2.c github repo.
