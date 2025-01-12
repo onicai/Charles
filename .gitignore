@@ -1,3 +1,7 @@
+# Repo specific files
+images_charles
+images_charles_nft_thumbnails
+
 # Various IDEs and Editors
 .vscode/
 .idea/
@@ -23,3 +27,14 @@ dist/
 
 # environment variables
 .env
+
+# C++
+null.d
+*.observed
+*.observed.filtered
+*.wasm
+*.wat
+a.out
+*.exe
+build-native-unit/
+build-native/
