@@ -1,0 +1,46 @@
+{
+    "canisters": {
+        "llm_0": {
+            "type": "custom",
+            "candid": "../../../icpp_llm/llama2_c/src/llama2.did",
+            "wasm": "../../../icpp_llm/llama2_c/build/llama2.wasm"
+        },
+        "llm_1": {
+            "type": "custom",
+            "candid": "../../../icpp_llm/llama2_c/src/llama2.did",
+            "wasm": "../../../icpp_llm/llama2_c/build/llama2.wasm"
+        },
+        "llm_2": {
+            "type": "custom",
+            "candid": "../../../icpp_llm/llama2_c/src/llama2.did",
+            "wasm": "../../../icpp_llm/llama2_c/build/llama2.wasm"
+        },
+        "llm_3": {
+            "type": "custom",
+            "candid": "../../../icpp_llm/llama2_c/src/llama2.did",
+            "wasm": "../../../icpp_llm/llama2_c/build/llama2.wasm"
+        },
+        "llm_4": {
+            "type": "custom",
+            "candid": "../../../icpp_llm/llama2_c/src/llama2.did",
+            "wasm": "../../../icpp_llm/llama2_c/build/llama2.wasm"
+        },
+        "llm_5": {
+            "type": "custom",
+            "candid": "../../../icpp_llm/llama2_c/src/llama2.did",
+            "wasm": "../../../icpp_llm/llama2_c/build/llama2.wasm"
+        },
+        "llm_6": {
+            "type": "custom",
+            "candid": "../../../icpp_llm/llama2_c/src/llama2.did",
+            "wasm": "../../../icpp_llm/llama2_c/build/llama2.wasm"
+        },
+        "llm_7": {
+            "type": "custom",
+            "candid": "../../../icpp_llm/llama2_c/src/llama2.did",
+            "wasm": "../../../icpp_llm/llama2_c/build/llama2.wasm"
+        }
+    },
+    "output_env_file": ".env",
+    "version": 1
+}

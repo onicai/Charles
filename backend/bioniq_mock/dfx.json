@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "canisters": {
+    "bioniq_mock": {
+      "main": "src/Main.mo"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "mops sources"
+    }
+  }
+}
