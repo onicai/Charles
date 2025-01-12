@@ -2,11 +2,10 @@
   "canisters": {
     "charlesStorybook_frontend": {
       "frontend": {
-        "entrypoint": "src/charlesStorybook_frontend/dist/index.html"
+        "entrypoint": "dist/index.html"
       },
       "source": [
-        "src/charlesStorybook_frontend/dist/",
-        "src/charlesStorybook_frontend/dist/assets"
+        "dist/"
       ],
       "type": "assets"
     }
