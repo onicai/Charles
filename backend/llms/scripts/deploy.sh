@@ -85,11 +85,11 @@ do
 
         echo "Initializing llm_$i, writing output to $temp_file"
 
-        echo " " >> $temp_file
-        echo "--------------------------------------------------" >> $temp_file
-        echo "Deploying the wasm to llm_$i" 
-        echo "Deploying the wasm to llm_$i" >> $temp_file >> $temp_file
-        yes | dfx deploy llm_$i -m reinstall --network $NETWORK_TYPE >> $temp_file
+        # echo " " >> $temp_file
+        # echo "--------------------------------------------------" >> $temp_file
+        # echo "Deploying the wasm to llm_$i" 
+        # echo "Deploying the wasm to llm_$i" >> $temp_file >> $temp_file
+        # yes | dfx deploy llm_$i -m reinstall --network $NETWORK_TYPE >> $temp_file
 
         echo " " >> $temp_file
         echo "--------------------------------------------------" >> $temp_file
