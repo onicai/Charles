@@ -25,14 +25,8 @@ CANISTER_ID_LLM_0='bkyz2-fmaaa-aaaaa-qaaaq-cai'
 
 # none will not use subnet parameter in deploy to ic
 # SUBNET="none"
-
-# bioniq's prod subnet
 SUBNET="qdvhd-os4o2-zzrdw-xrcv4-gljou-eztdp-bj326-e6jgr-tkhuc-ql6v2-yqe"
-
-# bioniq's dev subnet
 # SUBNET="jtdsg-3h6gi-hs7o5-z2soi-43w3z-soyl3-ajnp3-ekni5-sw553-5kw67-nqe"
-
-# our initial dev subnet
 # SUBNET="lspz2-jx4pu-k3e7p-znm7j-q4yum-ork6e-6w4q6-pijwq-znehu-4jabe-kqe"
 
 # Parse command line arguments for network type
@@ -43,17 +37,17 @@ while [ $# -gt 0 ]; do
             if [ "$1" = "local" ] || [ "$1" = "ic" ]; then
                 NETWORK_TYPE=$1
                 if [ "$NETWORK_TYPE" = "ic" ]; then
-                    # deployed on bioniq's dev subnet: "jtdsg-3h6gi-hs7o5-z2soi-43w3z-soyl3-ajnp3-ekni5-sw553-5kw67-nqe"
+                    # deployed on subnet: "jtdsg-3h6gi-hs7o5-z2soi-43w3z-soyl3-ajnp3-ekni5-sw553-5kw67-nqe"
                     CANISTER_ID_LLM_0='4hfoe-6aaaa-aaaaj-qnfwq-cai'
                     CANISTER_ID_LLM_1='4ogfy-iiaaa-aaaaj-qnfxa-cai'
                     CANISTER_ID_LLM_2='4jhdm-fqaaa-aaaaj-qnfxq-cai'
                     CANISTER_ID_LLM_3='6u2ne-wyaaa-aaaaj-qnfya-cai'
-                    # deployed on our initial dev subnet: "lspz2-jx4pu-k3e7p-znm7j-q4yum-ork6e-6w4q6-pijwq-znehu-4jabe-kqe"
+                    # deployed on subnet: "lspz2-jx4pu-k3e7p-znm7j-q4yum-ork6e-6w4q6-pijwq-znehu-4jabe-kqe"
                     CANISTER_ID_LLM_4='lkh5o-3yaaa-aaaag-acguq-cai'
                     CANISTER_ID_LLM_5='laxfu-oqaaa-aaaag-ak5kq-cai'
                     CANISTER_ID_LLM_6='ljuoi-yyaaa-aaaag-ak5la-cai'
                     CANISTER_ID_LLM_7='lovi4-vaaaa-aaaag-ak5lq-cai'
-                    # deployed on our production subnet: "qdvhd-os4o2-zzrdw-xrcv4-gljou-eztdp-bj326-e6jgr-tkhuc-ql6v2-yqe"
+                    # deployed on subnet: "qdvhd-os4o2-zzrdw-xrcv4-gljou-eztdp-bj326-e6jgr-tkhuc-ql6v2-yqe"
                     CANISTER_ID_LLM_8='t3lnu-6qaaa-aaaaj-azxfq-cai'
                     CANISTER_ID_LLM_9='t4kla-tiaaa-aaaaj-azxfa-cai'
                     CANISTER_ID_LLM_10='tvja4-faaaa-aaaaj-azxeq-cai'

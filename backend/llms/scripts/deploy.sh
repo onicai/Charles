@@ -17,14 +17,8 @@ NUM_LLMS_DEPLOYED=12
 
 # none will not use subnet parameter in deploy to ic
 SUBNET="none"
-
-# bioniq's prod subnet
 # SUBNET="qdvhd-os4o2-zzrdw-xrcv4-gljou-eztdp-bj326-e6jgr-tkhuc-ql6v2-yqe"
-
-# bioniq's dev subnet
 # SUBNET="jtdsg-3h6gi-hs7o5-z2soi-43w3z-soyl3-ajnp3-ekni5-sw553-5kw67-nqe"
-
-# our initial dev subnet
 # SUBNET="lspz2-jx4pu-k3e7p-znm7j-q4yum-ork6e-6w4q6-pijwq-znehu-4jabe-kqe"
 
 # Parse command line arguments for network type

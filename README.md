@@ -5,16 +5,18 @@ Charles is an AI NFT, running on the Internet Computer.
 # Model
 
 Download from https://huggingface.co/onicai/charles/tree/main
-Files are `model.bin` & `tok4096.bin`
-Store in the folder: ./models/out-09
 
-# Images
+- Files are `model.bin` & `tok4096.bin`
+- Store in the folder: ./models/out-09
 
-The images are in this Google drive: https://drive.google.com/drive/u/0/folders/15hxZWQN_ziQpX6VgMOUPNYNiG6gv5APz
 
 # Training
 
-See `training/README.md`
+Training data of Charles can be found at: 
+
+https://huggingface.co/datasets/onicai/Charles-training-data 
+
+For details, see `training/README.md`
 
 # Run llama2.c from command line
 

@@ -13,7 +13,6 @@ export PYTHONPATH="${PYTHONPATH}:$(realpath ../../../icpp_llm/llama2_c)"
 # Default network type is local
 NETWORK_TYPE="local"
 
-# bioniq's dev subnet
 SUBNET="jtdsg-3h6gi-hs7o5-z2soi-43w3z-soyl3-ajnp3-ekni5-sw553-5kw67-nqe"
 
 # Parse command line arguments for network type

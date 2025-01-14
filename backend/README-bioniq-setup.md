@@ -14,7 +14,6 @@ mops install
 ## All canisters
 
 - Subnet: [qdvhd-os4o2-zzrdw-xrcv4-gljou-eztdp-bj326-e6jgr-tkhuc-ql6v2-yqe](https://dashboard.internetcomputer.org/subnet/qdvhd-os4o2-zzrdw-xrcv4-gljou-eztdp-bj326-e6jgr-tkhuc-ql6v2-yqe)
-  - Bioniq Test Canister: [s7gcg-hqaaa-aaaaj-azxdq-cai](https://dashboard.internetcomputer.org/canister/s7gcg-hqaaa-aaaaj-azxdq-cai)
   - Bioniq Prod Canister: [syhes-kiaaa-aaaaj-azxda-cai](https://dashboard.internetcomputer.org/canister/syhes-kiaaa-aaaaj-azxda-cai)
   - ctrlb_canister: [tom4z-7yaaa-aaaaj-azxga-cai](https://dashboard.internetcomputer.org/canister/tom4z-7yaaa-aaaaj-azxga-cai)
   - llm_8: [tsigi-iyaaa-aaaaj-azxea-cai](https://dashboard.internetcomputer.org/canister/tsigi-iyaaa-aaaaj-azxea-cai)
@@ -33,11 +32,6 @@ mops install
   - llm_5: [laxfu-oqaaa-aaaag-ak5kq-cai](https://dashboard.internetcomputer.org/canister/laxfu-oqaaa-aaaag-ak5kq-cai)
   - llm_6: [ljuoi-yyaaa-aaaag-ak5la-cai](https://dashboard.internetcomputer.org/canister/ljuoi-yyaaa-aaaag-ak5la-cai)
   - llm_7: [lovi4-vaaaa-aaaag-ak5lq-cai](https://dashboard.internetcomputer.org/canister/lovi4-vaaaa-aaaag-ak5lq-cai)
-
-
-NOTE: The initial Bioniq dev environment was:
-- Subnet: [jtdsg-3h6gi-hs7o5-z2soi-43w3z-soyl3-ajnp3-ekni5-sw553-5kw67-nqe](https://dashboard.internetcomputer.org/subnet/jtdsg-3h6gi-hs7o5-z2soi-43w3z-soyl3-ajnp3-ekni5-sw553-5kw67-nqe)
-- Test Canister: [yewhw-wqaaa-aaaaj-qnfnq-cai](https://dashboard.internetcomputer.org/canister/yewhw-wqaaa-aaaaj-qnfnq-cai)
 
 
 ## Deployment

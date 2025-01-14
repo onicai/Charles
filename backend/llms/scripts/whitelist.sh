@@ -24,10 +24,7 @@ while [ $# -gt 0 ]; do
             if [ "$1" = "local" ] || [ "$1" = "ic" ]; then
                 NETWORK_TYPE=$1
                 if [ "$NETWORK_TYPE" = "ic" ]; then
-                    # new one, on bioniq's prod subnet
                     CTRLB_PRINCIPAL="tom4z-7yaaa-aaaaj-azxga-cai"
-                    # old one, on bioniq's dev subnet
-                    # CTRLB_PRINCIPAL="6t3lq-3aaaa-aaaaj-qnfyq-cai"
                 fi
             else
                 echo "Invalid network type: $1. Use 'local' or 'ic'."

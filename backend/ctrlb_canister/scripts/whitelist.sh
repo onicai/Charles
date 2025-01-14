@@ -22,12 +22,8 @@ while [ $# -gt 0 ]; do
             if [ "$1" = "local" ] || [ "$1" = "ic" ]; then
                 NETWORK_TYPE=$1
                 if [ "$NETWORK_TYPE" = "ic" ]; then
-                    # Bioniq's prod subnet - test
-                    BIONIQ_PRINCIPAL="s7gcg-hqaaa-aaaaj-azxdq-cai"
                     # Bioniq's prod subnet - prod
-                    # BIONIQ_PRINCIPAL="syhes-kiaaa-aaaaj-azxda-cai"
-                    # Bioniq's dev subnet
-                    # BIONIQ_PRINCIPAL="yewhw-wqaaa-aaaaj-qnfnq-cai"
+                    BIONIQ_PRINCIPAL="syhes-kiaaa-aaaaj-azxda-cai"
                     # My bioniq_mock canister
                     # BIONIQ_PRINCIPAL="62yam-niaaa-aaaaj-qnfza-cai"
                 fi
