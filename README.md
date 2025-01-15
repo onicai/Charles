@@ -2,6 +2,8 @@
 
 Charles is an AI NFT, running on the Internet Computer.
 
+<img src="Collection banner.png" alt="Charles Image" width="200">
+
 # Model
 
 Download from https://huggingface.co/onicai/charles/tree/main
